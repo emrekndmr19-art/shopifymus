@@ -53,7 +53,7 @@
 <div class="w-full bg-primary text-[10px] tracking-[0.35em] py-2 text-center text-white uppercase border-b border-white/10">
         1.500 ₺ üzeri siparişlerde özel gönderim
     </div>
-<nav class="sticky top-0 z-50 w-full bg-background-light/75 dark:bg-background-dark/75 backdrop-blur-xl border-b border-black/5 dark:border-white/5">
+<nav class="sticky top-0 z-50 w-full bg-background-light/75 dark:bg-background-dark/75 backdrop-blur-xl border-b border-black/5 dark:border-white/5 relative">
 <div class="max-w-[1800px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
 <div class="hidden lg:flex items-center space-x-10 text-[11px] tracking-[0.3em] uppercase font-medium">
 <a class="hover:text-accent transition-colors" href="shop.html">Butik</a>
@@ -61,8 +61,20 @@
 <a class="hover:text-accent transition-colors" href="marka.html">Marka</a>
 <a class="hover:text-accent transition-colors" href="journal.html">Günlük</a>
 </div>
-<div class="lg:hidden">
-<span class="material-symbols-outlined cursor-pointer">menu</span>
+<div class="lg:hidden relative">
+<details class="group">
+<summary class="list-none cursor-pointer">
+<span class="material-symbols-outlined">menu</span>
+</summary>
+<div class="absolute left-0 right-0 mt-4 bg-background-light/95 dark:bg-background-dark/95 border border-black/10 dark:border-white/10 p-6 shadow-xl">
+<nav class="flex flex-col space-y-4 text-[11px] tracking-[0.3em] uppercase">
+<a class="hover:text-accent transition-colors" href="shop.html">Butik</a>
+<a class="hover:text-accent transition-colors" href="koleksiyonlar.html">Koleksiyonlar</a>
+<a class="hover:text-accent transition-colors" href="marka.html">Marka</a>
+<a class="hover:text-accent transition-colors" href="journal.html">Günlük</a>
+</nav>
+</div>
+</details>
 </div>
 <div class="absolute left-1/2 -translate-x-1/2 text-center">
 <a class="font-display text-3xl lg:text-4xl tracking-[0.12em] font-medium italic" href="index.html">Dennice</a>
